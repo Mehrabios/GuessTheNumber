@@ -36,4 +36,4 @@ Your contributions to improve the Guess The Number game are welcome. To contribu
 </ul>
 
 **Copyright
-(c) 2023 Mohammad Hossein Anbarlou (Mehrab Anbarlou)**
+(c) 2024 Mohammad Hossein Anbarlou (Mehrab Anbarlou)**
