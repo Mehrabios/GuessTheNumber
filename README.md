@@ -34,3 +34,6 @@ Your contributions to improve the Guess The Number game are welcome. To contribu
     <li>Push your branch to your fork: git push origin feature/new-feature-name</li>
     <li>Use the Pull Request section on GitHub to submit your changes for review and merging.</li>
 </ul>
+
+**Copyright
+(c) 2023 Mohammad Hossein Anbarlou (Mehrab Anbarlou)**
