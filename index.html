@@ -2,11 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Experience the thrill of the Guess the Number game! Can you guess the hidden number? Start now and challenge your guessing skills.">
+    <meta name="keywords" content="Mehrabios , Mehrab Anbarlou , Mohammad Hossein Anbarlou , Projects , GitHub , Portfolio , Coding , Programming , Web Development , Open Source , HTML , CSS , JavaScript , Responsive Design , Number , Guess The Number , Guess The Number Game , Number Guessing , Web Game Development , Number Guessing Challenge , Interactive Web Game , JavaScript Game , HTML Game , CSS Game , Mini Project">
+    <meta name="author" content="Mehrab Anbarlou">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Guess The Number | JS Interactive Game</title>
     <link rel="stylesheet" href="./Styles/style.css">
 </head>
 <body>
+    <header>
+        <div class="title">
+            <h1>Guess The Number!</h1>
+        </div>
+        <div class="paragraph">
+            <p>"<em>Guess a number between 1 and 100, you only have a few chances, what are you waiting for!</em>"</p>
+        </div>
+    </header>
+    <main>
+        <div class="difficulty-level">
+            <select class="select-input" oninput="difficultyChecker()">
+                <option selected hidden>Choose a Difficulty Level</option>
+                <option value="Easy-Diff">Easy</option>
+                <option value="Normal-Diff">Normal</option>
+                <option value="Hard-Diff">Hard</option>
+                <option value="Expert-Diff">Expert</option>
+                <option value="Difficult-Diff">Difficult</option>
+            </select>
+        </div>
+        <div class="remaining-guesses d-none">
+            <p>Number of remaining guesses: <span class="guess-number"></span></p>
+        </div>
+        <form onsubmit="numberChecker(event)" class="d-none">
+            <div class="number-submit">
+                <input type="text" placeholder="Enter a Number Between 1 & 100" class="number-input">
+                <button type="submit" class="number-btn">Submit</button>    
+            </div>
+        </form>
+        <div class="number-checker">
+            <p class="number-comparison-paragraph"></p>
+        </div>
+    </main>
     <script src="./JavaScript/app.js"></script>
 </body>
 </html>

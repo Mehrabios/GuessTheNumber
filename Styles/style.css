@@ -1,0 +1,178 @@
+@font-face {
+    font-family: DMSans;
+    src: url(../Fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+* {
+    font-family: DMSans;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background-color: #f0ece5;
+}
+header {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 45px auto;
+}
+header .title h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 8px;
+    color: #161a30;
+    border-bottom: 1px solid #161a30;
+}
+header .paragraph p {
+    color: #575757;
+    font-size: 1.3rem;
+    margin: 8px;
+}
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto 45px;
+}
+main .difficulty-level {
+    width: 100%;
+}
+main .difficulty-level select {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #161a30;
+    border: 1px solid #161a30;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+main .difficulty-level select:hover {
+    color: #161a30;
+    background-color: #d7e8ee;
+}
+main .difficulty-level select option {
+    background-color: #f0ece5;
+    color: #161a30;
+}
+main .remaining-guesses p {
+    font-size: 1.2rem;
+    color: #161a30;
+}
+main form {
+    width: 100%;
+    margin: 8px;
+}
+main form .number-submit {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main form .number-submit input {
+    flex-grow: 1;
+    padding: 10px 8px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #161a30;
+    border-radius: 6px 0px 0px 6px;
+    background-color: #f0ece5;
+    transition: 0.5s;
+}
+main form .number-submit input:focus {
+    background-color: #d7e8ee;
+}
+main form .number-submit input::placeholder {
+    color: #161a30;
+}
+main form .number-submit button {
+    width: auto;
+    padding: 10px 8px;
+    font-size: 1.1rem;
+    background-color: #161a30;
+    color: #f0ece5;
+    border: 1px solid #161a30;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+}
+main .number-checker p {
+    font-size: 2.5rem;
+}
+.color-green {
+    color: #00ff7f;
+    background-color: #161a30;
+    padding: 12px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.color-green:hover {
+    background-color: #1f2546;
+}
+.color-yellow {
+    color: #ffbb3d;
+    background-color: #161a30;
+    padding: 12px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.color-yellow:hover {
+    background-color: #1f2546;
+}
+.color-red {
+    color: #ff3838;
+    background-color: #161a30;
+    padding: 12px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.color-red:hover {
+    background-color: #1f2546;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        width: 85%;
+        margin-top: 25px;
+    }
+    header .title h1 {
+        font-size: 3.6rem;
+    }
+    header .paragraph p {
+        font-size: 1.1rem;
+    }
+    main {
+        width: 85%;
+    }
+    main .difficulty-level select {
+        width: 100%;
+    }
+    main form {
+        width: 100%;
+    }
+    main form .number-submit input {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+    main form .number-submit button {
+        font-size: 1rem;
+    }
+    main .number-checker p {
+        font-size: 1.5rem;
+    }
+}
