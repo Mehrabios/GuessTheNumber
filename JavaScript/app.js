@@ -79,6 +79,7 @@ function numberChecker(event) {
             numberComparisonParagraphElement.classList.add("color-red");
             numberInputElement.setAttribute("disabled", "");
             numberBtnElement.setAttribute("disabled", "");
+            selectInputElement.setAttribute("disabled","");
             restartPageElement.classList.replace("d-none","d-block");
             restartBtnElement.classList.add("back-red");
         }
